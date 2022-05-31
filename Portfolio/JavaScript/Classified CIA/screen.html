@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="screen.css">
+    <script src="https://kit.fontawesome.com/05c9325a64.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container mt-5">
+    <h1 class="mt-auto text-center">CLASSIFIED CIA</h1>
+
+    <input type="text" id="filterInput" placeholder="Search names...">
+
+    <form id="agent-form">
+        <div class="form-group">
+            <label for="codename">Codename</label>
+            <input type="text" id="codename" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="type">Class</label>
+            <input type="text" id="type" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="description">Description</label>
+            <textarea class="form-control" id="description" rows="3"></textarea>
+          </div>
+          <input type="submit" value="Hire Agent" class="btn btn-danger btn-block mt-5">
+        </form>
+
+        <table class="table table-striped mt-5">
+            <thead>
+              <tr>
+                <th>Codename</th>
+                <th>Class</th>
+                <th>Description</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="agent-list"></tbody>
+          </table>
+      </div>
+
+      <script src="screenScript.js"></script>
+</body>
+</html>

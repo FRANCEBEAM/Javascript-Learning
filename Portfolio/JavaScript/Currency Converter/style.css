@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #218380;
+}
+
+h1{
+    color: white;
+}
+
+
+.containerCurrency{
+    background: #D81159;
+    color: black;
+    border-radius: 1em;
+    padding: .5em 2.5em;
+    margin: auto;
+    align-self: center;
+    width: 40%;
+    font-size: 14px;
+    font-family: montserrat;
+    box-shadow: 5px 10px 20px;
+}
+
+h5{
+    color: white;
+}
+#amount{
+    color: white;
+}
+
+#euroContainer{
+    background: #0C0A3E;
+    margin-top: 1.5em;
+    padding: .5em;
+    border-radius: .5em;
+    color: white;
+}
+
+#usdContainer{
+    background: #0C0A3E;
+    margin-top: 1.5em;
+    padding: .5em;
+    border-radius: .5em;
+    color: white;
+}
+#gbpContainer{
+    background: #0C0A3E;
+    margin-top: 1.5em;
+    padding: .5em;
+    border-radius: .5em;
+    color: white;
+}
+#austContainer{
+    background: #0C0A3E;
+    margin-top: 1.5em;
+    padding: .5em;
+    border-radius: .5em;
+    color: white;
+}
+
+#candContainer{
+    background: #0C0A3E;
+    margin-top: 1.5em;
+    padding: .5em;
+    border-radius: .5em;
+    color: white;
+}
+
+#yenContainer{
+    background: #0C0A3E;
+    margin-top: 1.5em;
+    padding: .5em;
+    border-radius: .5em;
+    color: white;
+}
+
+
