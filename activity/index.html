@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+           <b>Francis Santander</b>
+        </div>
+        <nav>
+            <ul class="selection"><li><a href="#">Home</a></li><li><a href="#">Work</a></li><li><a href="#">Contact</a></li><li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <!--XML Container-->
+        <h1>XML</h1>
+        <p>What is XML?</p>
+        <div class="xml-container">
+            <br>
+            <p class="parag1">XML stands for eXtensible Markup Language. A markup language is used to provide information about a document. Tags are added to the document to provide the extra information. HTML tags tell a browser how to display the document. XML tags give a reader some idea what some of the data means.
+               
+            </p>
+            <br>
+        </div>
+        <button id="btnToggle1" class="btnToggle">Show more</button>
+        <br>
+        <br>
+
+        <!--XML Syntax Container-->
+        <h1>XML Syntax Rules</h1>
+        <div class="xmlsyntax-container">         
+            <br>
+                Tags are enclosed in angle brackets. <br>
+                Tags come in pairs with start-tags and end-tags.<br>
+                Tags must be properly nested.<br>
+                Tags that do not have end-tags must be terminated by a /
+                Tags are case sensitive.<br>
+                XML in any combination of cases is not allowed as part of a tag.<br>
+                Tags may not contain  or &.<br>
+                Tags follow Java naming conventions, except that a single colon and other characters are allowed. <br>They must 
+                    begin with a letter and may not contain white space
+                Documents must have a single root tag that begins the document.
+
+                <br>
+                <br>
+                <p>An XML document has a single root node. This element is "the parent" of all other elements. The elements in an XML 
+                    document form a document tree. The tree starts at the root and branches to the lowest level of the tree. The tree is a 
+                    general ordered tree.</p>
+                    <br>
+                    <li>A parent node may have any number of children.</li>
+                    <li>Child nodes are ordered, and may have siblings.</li>
+                    <br>
+                    <p>The terms parent, child, and sibling are used to describe the relationships between elements. Parent elements have 
+                        children. Children on the same level are called siblings (brothers or sisters). All elements can have text content and 
+                        attributes (just like in HTML). XML documents use a self-describing and simple syntax:</p>
+                        <br>
+                        <br>
+                        <img src="/activity/xml1.png" width="50%" alt="">
+            
+        </div>
+        <br>
+        <button id="btnToggle2" class="btnToggle2">Show more</button>
+        <br>
+                <br>
+             <!--XML DOM -->
+             <div class="dom-container">
+                <h1>XML DOM</h1>
+                    <br>
+                <p>
+                    The DOM (Document Object Model) defines a standard for accessing and manipulating documents. It is a platform and 
+                    language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, 
+                    and style of a document
+                <br>
+                 <br>
+                The XML DOM defines a standard way for accessing and manipulating XML documents. It presents an XML document as a tree-structure.
+                 <br>
+                <br>
+                All XML elements can be accessed through the XML DOM.
+                 <br>
+             <br>
+                The XML DOM is:
+                 <br>
+                <br>
+                 <ol>
+                    <li>A standard object model for XML</li>
+                 <li>A standard programming interface for XML</li>
+                  <li>Platform- and language-independent</li>
+                 <li>A W3C standard</li>
+               </ol>
+               <br>
+                <br>
+                In other words: The XML DOM is a standard for how to get, change, add, or delete XML elements.
+                This code retrieves the text value of the first element in an XML document:
+                <br>
+                 <br>
+                 txt = xmlDoc.getElementsByTagName("title") <br>
+                 [0].childNodes[0].nodeValue;
+                 <br>
+                 This example reads "books.xml" into xmlDoc and retrieves the text value of the first element in books.xml.
+                    Example Explained <br>
+                    xmlDoc - the XML DOM object created by the parser.
+                <br>
+                getElementsByTagName("title")[0] - get the first element <br>
+                childNodes[0] - the first child of the element (the text node) <br>
+                nodeValue - the value of the node (the text itself) <br><br>
+                This example reads "books.xml" into xmlDoc and retrieves the text value of the first element in books.xml.
+                    Example Explained
+                </p>
+             </div>
+             <br>
+             <br>
+        <!--XML DOM NODES-->
+        <h1>XML DOM NODES</h1>
+        <p class="domNodesTxt">
+             <br>
+            <!-- The most common types of nodes in XML are −
+            Document Node − Complete XML document structure is a document node.
+            Element Node − Every XML element is an element node. This is also the only type of node that can have attributes.
+            Attribute Node − Each attribute is considered an attribute node. It contains information about an element node, but is 
+            not actually considered to be children of the element.
+            Text Node − The document texts are considered as text node. It can consist of more information or just white space. -->
+            </p>
+            <br>
+            <button id="btnGetText" class="btnGetText">Get text</button>
+        <br><br>
+        <!--XML DOM TREE-->
+        <p>
+            <h1>XML DOM – NODE TREE</h1>
+            <br>
+            In an XML document, the information is maintained in hierarchical structure; this hierarchical structure is referred to as the Node Tree. This hierarchy allows a developer to navigate around the tree looking for specific information, thus nodes are allowed to access. The content of these nodes can then be updated.The structure of the node tree begins with the root element and spreads out to the child elements till the lowest level. The structure of the node tree begins with the root element and spreads out to the child elements till the lowest level.
+            <br>   
+            <br>        
+        </p>
+
+        <!--DOM PARSER-->
+        <p>
+            A parser is a software application that is designed to analyze a document, in our case XML document and do something specific with the information. Some of the DOM based parsers are listed in the following table <br> <br>
+            In a tree-based API like DOM, the parser traverses the XML file and creates the corresponding DOM objects. Then you can traverse the DOM structure back and forth.
+            <br>
+            <br>
+            <h3>Loading and Parsing XML</h3>
+            <br>
+            While loading an XML document, the XML content can come in two forms −
+            <br>
+            <br>
+            <h3>Content as XML file</h3>
+            <br>
+            Following example demonstrates how to load XML (node.xml) data using Ajax and Javascript when the XML content is received as an XML file. Here, the Ajax function gets the content of an xml file and stores it in XML DOM. Once the DOM object is created, it is then parsed.
+            <br>
+            <br>
+            <img src="/activity/levelsdom.png" width="50%" class="levelsDom" alt="">
+        </p>
+        <button id="btnShowImage" class="btnShowImage">Show Image</button>
+        <br>
+        <br>
+        <!--TRAVERSING-->
+        <div class="content-container">
+        <div class="dom-traversing">
+        <div>
+            <h1>XML DOM – TRAVERSING</h1>
+            <br>
+            In this chapter, we will discuss XML DOM Traversing.
+            <p class="paragTrav">
+                We studied in the previous chapter how to load XML document and parse the thus obtained DOM object. This parsed DOM object can be traversed. Traversing is a process in which looping is done in a systematic manner by going across each and every element step by step in a node tree.
+               </p>
+            <br><br>
+            <button id="btnTraversing" class="btnTraversing">Show more</button>
+            <br>
+          
+        </div>
+    </div>
+
+        <br>
+        <br>
+        <div class="dom-parentNode">
+        <p>
+            <h1>DOM - Parent Node</h1>
+            <br>
+            This property specifies the parent node as a node object.Example The following example (navigate_example.htm) parses an XML document (node.xml) into an XML DOM object. Then the DOM object is navigated to the parent node through the child node −
+            <br>
+          <b>Execution</b> 
+Save this file as navigate_example.html on the server path (this file and node.xml should be on the same path in your server). In the output, we get the parent node of Employee, i.e, Company.
+        </p>
+    </div>
+        <br>
+        <div class="dom-accessing">
+        <p>
+            <h1>XML DOM - Accessing</h1>
+            <br>
+            In this chapter, we will study about how to access the XML DOM nodes which are considered as the informational units of the XML document. The node structure of the XML DOM allows the developer to navigate around the tree looking for specific information and simultaneously access the information.
+            Accessing Nodes
+            Following are the three ways in which you can access the nodes −
+             By using the getElementsByTagName () method
+             By looping through or traversing through nodes tree
+             By navigating the node tree, using the node relationships
+            getElementsByTagName ()
+            This method allows accessing the information of a node by specifying the node name. It also allows accessing the information of the Node List and Node List Length.
+        </p>
+    </div>
+</div>
+<br>
+<br>
+
+        <p>
+            <h1>XML DOM – GET NODE</h1>
+            <br>
+            In this chapter, we will study about how to get the node value of a XML DOM object. XML documents have a hierarchy of informational units called nodes. Node object has a property nodeValue, which returns the value of the element.
+            <br>
+           <b>Get Node Value</b>
+           <br>
+           <p>The method getElementsByTagName() returns a NodeList of all the Elements in document order with a given tag name.</p>
+
+          <b>Get Attribute Value</b>
+          <br>
+Attributes are part of the XML node elements. A node element can have multiple unique attributes. Attribute gives more information about XML node elements. To be more precise, they define properties of the node elements. An XML attribute is always a name-value pair. This value of the attribute is called the attribute node. The getAttribute() method retrieves an attribute value by element name.
+        </p>
+
+        <br>
+        <br>
+        <p>
+            <h1>XML DOM – SET NODE</h1>
+            <br>
+            In this chapter, we will study about how to change the values of nodes in an XML DOM object. Node value can be changed as follows −
+var value = node.nodeValue;
+If node is an Attribute then the value variable will be the value of the attribute; if node is a Text node it will be the text content; if node is an Element it will be null. Following sections will demonstrate the node value setting for each node type (attribute, text node and element).
+The node.xml used in all the following examples is as below −
+<br>
+<br>
+<b>Change Value of Text Node</b>
+When we, say the change value of Node element we mean to edit the text content of an element (which is also called the text node). Following example demonstrates how to change the text node of an element.
+<br>
+<br>
+<b>Example</b>
+The following example (set_text_node_example.htm) parses an XML document (node.xml) into an XML DOM object and change the value of an element's text node. In this case, Email of each Employee to support@xyz.com and print the values.
+        </p>
+        <br><br>
+        <p>
+            <h1>XML DOM – CREATE NODE</h1>
+            <br>
+            In this chapter, we will discuss how to create new nodes using a couple of methods of the document object. These methods provide a scope to create new element node, text node, comment node and attribute node. If the newly created node already exists in the element object, it is replaced by the new one. Following sections demonstrate this with examples. <br>
+<b>Create new Element node</b>
+<br>
+The method createElement() creates a new element node. If the newly created element node exists in the element object, it is replaced by the new one.
+<br>
+<br>
+<b>Syntax</b> <br>
+Syntax to use the createElement() method is as follows −
+var_name = xmldoc.createElement("tagname");
+Where,  var_name − is the user-defined variable name which holds the name of new element.  ("tagname") − is the name of new element node to be created. <br><br>
+<b>Example</b>
+The following example (createnewelement_example.htm) parses an XML document (node.xml) into an XML DOM object and creates a new element node PhoneNo in the XML document.
+<br>
+<br>
+new_element = xmlDoc.createElement("PhoneNo"); creates the new element node x.appendChild(new_element); x holds the name of the specified child node to which the new element node is appended.
+<br>
+    <b>Execution</b>
+    <br>
+    Save this file as createnewelement_example.htm on the server path (this file and node.xml should be on the same path in your server). In the output we get the attribute value as PhoneNo. Create new Text node
+    The method createTextNode() creates a new text node.
+    <b>Syntax</b>
+    <br>
+    Syntax to use createTextNode() is as follows −
+    var_name = xmldoc.createTextNode("tagname");
+    Where,  var_name − it is the user-defined variable name which holds the name of new text node.  ("tagname") − within the parenthesis is the name of new text node to be created.
+        </p>
+
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
