@@ -115,3 +115,25 @@ div.dom-accessing{
 div p.paragTrav{
     display: none;
 }
+
+
+/* Json */
+p.whatJson{
+    display: none;
+}
+
+div.isNot{
+    display: none;
+}
+
+div.usedFor{
+    display: none;
+}
+
+div.whatAjax{
+    display: none;
+}
+
+div.jquery-container{
+    display: none;
+}

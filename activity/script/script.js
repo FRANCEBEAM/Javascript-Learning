@@ -40,5 +40,10 @@ $(document).ready(function(){
     });
 
 
+    //Json
+    $("#btnWhatJson").click(function(){
+        $("Json").slideToggle(500);
+    });
+    
 
 });

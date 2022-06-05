@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON LESSON</title>
+   <link rel="stylesheet" href="/activity/style/index.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+           <b>Francis Santander</b>
+        </div>
+        <nav>
+            <ul class="selection"><li><a href="/activity/index.html">XML</a></li><li><a href="/activity/pages/json.html">JSON</a></li><li><a href="/activity/pages/ajax.html">AJAX</a></li><li><a href="/activity/pages/jquery.html">JQUERY</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <div class="json-container">
+            <h1>What is JSON?</h1>
+
+            <p>
+                <p class="whatJson">
+                <br>
+                • JSON stands for JavaScript Object Notation <br>
+                • JSON is a lightweight data-interchange format <br>
+                • JSON is plain text written in JavaScript object notation <br>
+                • JSON is used to send data between computers <br>
+                • JSON is language independent <br>
+              </p>    <br>
+
+              <button id="btnWhatJson" class="btnWhatJson">Show more</button>
+                <br>
+                <br>
+                <b>JSON is NOT</b>
+                <br>
+                <br>
+                <div class="isNot">
+                • Too Comple <br>
+                • A “document” form <br>
+                • A markup language <br>
+                • A programming lang <br>
+              </div>
+                <br>
+                <br>
+                <div class="usedFor">
+                <b>What is JSON used for?</b> <br> <br>
+                JavaScript Object Notation (JSON) is a standard text-based format for representing structured data based on JavaScript object syntax. It is commonly used for transmitting data in web applications (e.g., sending some data from the server to the client, so it can be displayed on a web page, or vice versa).
+            </div>
+                <br>
+                <br>
+                <b>Which is better XML or JSON?</b> <br> <br>
+                JSON is faster because it is designed specifically for data interchange. JSON encoding is terse, which requires less bytes for transit. JSON parsers are less complex, which requires less processing time and memory overhead. XML is slower, because it is designed for a lot more than just data interchange.
+                <br>
+                <br>
+                <b>Exchanging Data</b> <br> <br>
+                When exchanging data between a browser and a server, the data can only be text. JSON is text, and we can convert any JavaScript object into JSON, and send JSON to the server. We can also convert any JSON received from the server into JavaScript objects. This way we can work with the data as JavaScript objects, with no complicated parsing and translations.
+
+                <br>
+                <br>
+                <img src="/activity/img/json1.png" width="50%" alt="">
+                <br>
+                <br>
+                <img src="/activity/img/json2.png" width="50%" alt="">
+                <br>
+                <br>
+
+                <b>JSON Syntax Rules</b><br> <br>
+                JSON syntax is derived from JavaScript object notation syntax:
+                <br>
+                • Data is in name/value pair <br>
+                • Data is separated by commas <br>
+                • Curly braces hold objects {} <br>
+                • Square brackets hold arrays [] <br>
+                <br>
+                <br>
+                <b>JSON Data - A Name and a Value</b> <br> <br>
+                JSON data is written as name/value pairs. 
+                A name/value pair consists of a field name (in double quotes), followed by a colon, followed by a value:                
+                <br>
+                <br>
+                <b>JSON - Evaluates to JavaScript Objects</b> <br> <br>
+                The JSON format is almost identical to JavaScript objects. In JSON, keys must be strings, written with double quotes:            
+                <br>
+                <br>
+                <b>JSON Uses JavaScript Syntax
+                </b> <br> <br>
+                Because JSON syntax is derived from JavaScript object notation, very little extra software is needed to work with JSON within JavaScript.        
+                <br>
+                <br>
+                <b>JSON Data Types</b> <br> <br>
+               <b> Number:</b> No difference between integer and float <br>
+               <b> String:</b> String of Unicode characters. Use double quotes <br>
+                <b>Boolean: </b>True or false Array: Ordered list of 0 or more values in [] <br>
+                <b>Object:</b> Unordered collection of key/value pairs Null: Empty value
+                <br>
+                <br>
+                <b>JSON Data Types</b>
+                <br>
+                <img src="/activity/img/json3.png" width="50%" alt="">
+                <br>
+                <br>
+
+                <b>JSON.parse()</b> <br>
+                A common use of JSON is to exchange data to/from a web server. When receiving data from a web server, the data is always a string. <br><br>
+
+                <b>JS:</b> Parse the data with JSON.parse(), and the data becomes a JavaScript object. <br>
+
+                <b>PHP:</b> You can also use json_decode() to get the string data of json file. <br>
+                <br>
+                <b>Example - Parsing JSON</b>
+                <br>
+                <br>
+                <img src="/activity/img/json4.png" width="50%" alt="">
+                <br>
+                <br>
+               <b>JSON ARRAYS</b> <br>
+                Arrays in JSON are almost the same as arrays in JavaScript. In JSON, array values must be of type string, number, object, array, boolean or null. <br>
+                <br>
+                <b>Example </b><br>
+                [ "Ford", "BMW", "Fiat" ]
+
+                <br>
+                <br>
+                <b>JSON PHP File</b> <br>
+                A common use of JSON is to read data from a web server, and display the data in a web page. PHP has some built-in functions to handle JSON. Objects in PHP can be converted into JSON by using the PHP function 
+
+                <br><br>
+
+                <img src="/activity/img/json5.png" width="50%" alt="">
+            </p>
+
+
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/activity/script/jsonContent.js"></script>
+</body>
+</html>

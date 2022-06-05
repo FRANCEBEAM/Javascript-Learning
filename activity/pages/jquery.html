@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Lesson</title>
+    <link rel="stylesheet" href="/activity/style/index.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+           <b>Francis Santander</b>
+        </div>
+        <nav>
+            <ul class="selection"><li><a href="/activity/index.html">XML</a></li><li><a href="/activity/pages/json.html">JSON</a></li><li><a href="/activity/pages/ajax.html">AJAX</a></li><li><a href="/activity/pages/jquery.html">JQUERY</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-container">
+        <div class="jquery-container">
+            <b>What is jQuery?
+            </b>
+            <br>
+            <br>
+            - jQuery is a JavaScript Library. <br>
+            - jQuery greatly simplifies <br>
+            - JavaScript programming. <br>
+        jQuery is easy to learn.
+
+        <br>
+        <br>
+        jQuery is a lightweight, "write less, do more" , JavaScript library.
+            <br>
+            <br>
+            <b>Why jQuery?
+            </b>
+            <br>
+            There are lots of other JavaScript libraries out there, but jQuery is probably the most popular, and also the most extendable.
+            <br>
+            <br>
+            - Google <br>
+            - Microsoft <br>
+            - IBM <br>
+            - Netflix <br>
+            <br>
+            <br>
+
+            <b>Downloading jQuery</b>
+            <br>
+            <br>
+            There are two versions of jQuery available for downloading:
+            <br>
+            - Production version - this is for your live website because it has been minified and compressed
+            Development version  <br>
+            
+            - this is for testing and development (uncompressed and readable code) <br> <br>
+
+            <b>jQuery Selectors</b>
+            <br> <br>
+            - one of the most important parts of the jQuery library. <br>
+            - allow you to select and manipulate HTML element(s). <br> 
+            - used to "find" (or select) HTML elements based on their name, id, classes, types, attributes, values of attributes and much more. It's based on the existing CSS Selectors, and in addition, it has some own custom selectors. <br>
+
+            <br>
+
+            <b>The element Selector</b>
+            <br>
+            <br>
+            The jQuery element selector selects elements based on the element name.
+            <br>
+            <br>
+            <b>The #id Selector</b>
+            <br>
+            <br>
+            The jQuery #id selector uses the id attribute of an HTML tag to find the specific element. To find an element with a specific id, write a hash character, followed by the id of the HTML element:
+            <br>
+            <br>
+            <b>The .class Selector</b> <br> <br>
+            The jQuery .class selector finds elements with a specific class. To find elements with a specific class, write a period character, followed by the name of the class:
+            <br>
+            <br>
+            <img src="/activity/img/query1.png" width="50%" alt="">
+            <br>
+            <br>
+            <b>jQuery Event Methods</b>
+            <br>
+            <br>
+            What are Events? All the different visitors' actions that a web page can respond to are called events. An event represents the precise moment when something happens.
+            <br>
+            <br>
+            <img src="/activity/img/query2.png" width="50%" alt="">
+            <br>
+            <br>
+            <b>jQuery Effects - Sliding</b> <br><br>
+            jQuery slideDown() Method The jQuery slideDown() method is used to slide down an element. 
+            <br>
+            <br>
+            <b>Syntax: </b> <br>
+            $(selector).slideDown(speed,callback);
+            <br>
+            <br>
+            <b>jQuery slideUp() Method </b>
+            <br>
+            The jQuery slideUp() method is used to slide up an element. Syntax: $(selector).slideUp(speed,callback);
+             <br><br>
+            <b>jQuery Effects - Sliding
+            </b>
+            <br>
+            <br>
+            jQuery slideToggle() Method
+The jQuery slideToggle() method toggles between the slideDown() and slideUp() methods. If the elements have been slid down, slideToggle() will slide them up. If the elements have been slid up, slideToggle() will slide them down. 
+<br><br>
+<b>jQuery Effects - Animation</b> <br><br>
+jQuery Animations - The animate() Method The jQuery animate() method is used to create custom animations. <br><br>
+<b>Syntax:</b>
+<br>
+$(selector).animate({params},speed,callback); The required params parameter defines the CSS properties to be animated.
+<br>
+<br>
+<b>jQuery animate()</b> <br>
+$(selector).animate({params},speed,callback); The required params parameter defines the CSS properties to be animated.
+<br>
+<br>
+<b>jQuery animate()</b>
+<br>
+jQuery animate() - Using Relative Values It is also possible to define relative values (the value is then relative to the element's current value). This is done by putting += or -= in front of the value:
+<br>
+<br>
+Using Pre-defined Values You can even specify a property's animation value as "show" , "hide" , or "toggle":
+
+<br>
+<br>
+<b>jQuery Stop Animations</b>
+<br>
+<br>
+jQuery stop() Method The jQuery stop() method is used to stop an animation or effect before it is finished. The stop() method works for all jQuery effect functions, including sliding, fading and custom animations.
+
+<br>
+<b>Syntax:</b><br>
+$(selector).stop(stopAll,goToEnd);
+<br>
+<br>
+<b>jQuery Callback Functions</b>
+<br>
+<br>
+jQuery Callback Functions JavaScript statements are executed line by line. However, with effects, the next line of code can be run even though the effect is not finished. This can create errors. To prevent this, you can create a callback function. A callback function is executed after the current effect is finished.
+<br>
+<br>
+<b>Typical syntax: $(selector).hide(speed,callback);</b> <br><br>
+
+<b>jQuery - Chaining</b>
+<br>
+<br>
+jQuery Method Chaining Until now we have been writing jQuery statements one at a time (one after the other). However, there is a technique called chaining, that allows us to run multiple jQuery commands, one after the other, on the same element(s).
+
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/activity/script/queryContent.js"></script>
+</body>
+</html>

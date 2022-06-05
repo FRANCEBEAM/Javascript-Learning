@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Lesson</title>
+    <link rel="stylesheet" href="/activity/style/index.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+           <b>Francis Santander</b>
+        </div>
+        <nav>
+            <ul class="selection"><li><a href="/activity/index.html">XML</a></li><li><a href="/activity/pages/json.html">JSON</a></li><li><a href="/activity/pages/ajax.html">AJAX</a></li><li><a href="/activity/pages/jquery.html">JQUERY</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <div class="main-container">
+       <p>
+           <div class="whatAjax">
+           <b>What is AJAX?</b>
+           <br>
+           <br>
+           - AJAX = Asynchronous JavaScript And XML. <br>
+           - AJAX is not a programming language. <br>
+           - AJAX just uses a combination of: <br>
+           - A browser built-in XMLHttpRequest object (to request data from a web server) <br>
+           - JavaScript and HTML DOM (to display or use the data)
+           <br> <br>
+       
+           <img src="/activity/img/ajax1.png" width="50%" alt="">
+        </div>
+           <br>
+           <br>
+
+           <b>AJAX - The XMLHttpRequest Object</b> <br> <br>
+           - All modern browsers support the XMLHttpRequest object. <br>
+           - The XMLHttpRequest object can be used to exchange data with a server behind the scenes. <br>
+           - This means that it is possible to update parts of a web page, without reloading the whole page. <br> <br>
+
+           <b>Create an XMLHttpRequest Object</b> <br> <br>
+           - All modern browsers support the XMLHttpRequest object. <br>
+           - The XMLHttpRequest object can be used to exchange data with a server behind the scenes. <br>
+        - This means that it is possible to update parts of a web page, without reloading the whole page. <br> <br>
+
+        <img src="/activity/img/ajax2.png" width="50%" alt="">
+
+        <br>
+        <br>
+        <b>XMLHttpRequest Object Methods</b>
+        <br>
+        <br>
+        <img src="/activity/img/ajax3.png" width="50%" alt="">
+        <br>
+        <br>
+
+        <b>AJAX - Send a Request To a Server</b>
+        The XMLHttpRequest object is used to exchange data with a server. <br> <br>
+
+	- To send a request to a server, we use the open() and send() methods of the XMLHttpRequest object: <br> <br>
+	
+xhttp.open("GET", "ajax_info.txt", true); xhttp.send();
+
+        <br> <br>
+        <b>GET or POST?</b> <br> <br>
+        - GET is simpler and faster than POST, and can be used in most cases. <br>
+        - However, always use POST requests when: <br>
+        - A cached file is not an option (update a file or database on the server). <br>
+        - Sending a large amount of data to the server (POST has no size limitations). <br>
+    - Sending user input (which can contain unknown characters), POST is more robust and secure than GET. 
+
+    <br>
+    <br>
+    <b>Asynchronous - True or False?</b> <br>
+Server requests should be sent asynchronously. The async parameter of the open() method should be set to true: <br> <br>
+
+<b>xhttp.open("GET", "ajax_test.asp", true);</b>
+<br> <br>
+By sending asynchronously, the JavaScript does not have to wait for the server response, but can instead:
+<br>
+<br>
+- execute other scripts while waiting for server response
+- deal with the response after the response is ready
+<br>
+<br>
+<b>AJAX - Server Response</b> <br> <br>
+The onreadystatechange Property <br> <br>
+	- The readyState property holds the status of the XMLHttpRequest. <br>
+	- The onreadystatechange property defines a function to be executed when the readyState changes. <br>
+    - The status property and the statusText property holds the status of the XMLHttpRequest object. 
+       </p>
+   </div>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="/activity/script/ajaxContent.js"></script>
+</body>
+</html>
